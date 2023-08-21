@@ -1,6 +1,4 @@
 # MAP TO GENOME WITH MINIMAP2
-# * * * * * Map with minimap2
-
 rule map_to_genome_cDNA:
     input:
         fastq = rules.trim.output,
@@ -66,5 +64,3 @@ rule count:
         featureCounts -T {threads} {params.preset} {params.opts} \
         -a {input.anno} -o {output} {input.bam} 2> {log}
         """
-
-#
