@@ -1,7 +1,4 @@
-# MAP TO GENOME WITH MINIMAP2
-# * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-# * * * * * Map with minimap2
+# Minimap2 - reference genome mapping
 
 rule map_to_genome_cDNA:
     input:
